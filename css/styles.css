@@ -33,6 +33,7 @@ ol {
 
 img, svg{
     display: block;
+    max-width: 100%;
 }
 
 button {
@@ -88,8 +89,16 @@ input {
 /* Navigation-menu */
 
 .navigation-menu{
+    display: none;
     display: flex;
     gap: 40px;
+}
+
+.burger-menu-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
 }
 
 .link-navigation{
@@ -125,6 +134,7 @@ input {
 /* Contacts */
 
 .contacts{
+    /* display: none; */
     font-style: normal;
 }
 
@@ -154,26 +164,28 @@ input {
 
 .main-title{
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 1.12px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
     color: #ffffff;
-    max-width: 496px;
-    margin-left: 472px;
+    max-width: 188px;
+    margin: 0 auto 72px auto;
 }
 
 /* Hero-section */
 
 .hero {
     background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     max-width: 1440px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    min-width: 320px;
+    margin: 0 auto;
 }
 
 .hero-button{
@@ -190,8 +202,7 @@ input {
     display: block;
     min-width: 169px;
     height: 56px;
-    margin-left: 636px;
-    margin-top: 48px;
+    margin: 0 auto 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -202,8 +213,8 @@ input {
 /* Our-competencies */
 
 .our-competencies{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .our-competencies .container{
@@ -220,6 +231,7 @@ input {
         background-color: #f4f4fd;
        height: 112px;
       margin-bottom: 8px;
+      display: none;
 }
 
 .our-competencies-title{
@@ -246,33 +258,41 @@ input {
 
 .competencie-list{
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
 }
 
-.competency{
+/* .competency{
     width: calc((100% - 72px) / 4);
+} */
+
+.competency{
+max-width: 288px;
 }
 
 .name-competency{
     color: #2e2f42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .description-competence{
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 500;
     letter-spacing: 0.32px;
 }
 
 /* Our-team */
 
 .our-team{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     background-color: #f4f4fd;
 }
 
@@ -291,14 +311,17 @@ input {
 background-color: #ffffff;
 border-radius: 0px 0px 4px 4px;
 box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-width: calc((100% - 72px) / 4);
+max-width: 264px;
+/* width: calc((100% - 72px) / 4); */
 }
 
 .team-list{
     display: flex;
-    gap: 24px;
-    margin-left: 156px;
-    margin-right: 156px;
+    flex-direction: column;
+    gap: 72px;
+    /* margin-left: 156px;
+    margin-right: 156px; */
+    align-items: center;
 }
 
 .team-member .container{
@@ -357,8 +380,8 @@ width: calc((100% - 72px) / 4);
 /* Our-portfolio */
 
 .portfolio{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .our-portfolio-title{
@@ -374,16 +397,20 @@ width: calc((100% - 72px) / 4);
 
 .portfolio-list{
     display: flex;
-    row-gap: 48px;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    /* row-gap: 48px;
     column-gap: 24px;
     flex-wrap: wrap;
     margin-left: 156px;
-    margin-right: 156px;
+    margin-right: 156px; */
 }
 
 .product-list{
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    max-width: 288px;
 }
 
 .product-image{
@@ -443,17 +470,21 @@ font-size: 20px;
 /* Footer */
 
 .footer-section{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 156px;
+    padding-top: 98px;
+    padding-bottom: 96px;
+    /* padding-left: 156px; */
     background-color: #2e2f42;
     display: flex;
-    align-items: baseline
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+
+    /* align-items: baseline */
 }
 
-.description{
-    margin-right: 120px;
-}
+/* .description{
+    margin-bottom: 120px;
+} */
 
 .logo-footer{
     display: inline-block;
@@ -486,6 +517,7 @@ font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.32px;
     margin-bottom: 16px;
+    text-align: center;
 }
  
 .footer-social .social-list{
@@ -499,13 +531,14 @@ font-size: 20px;
 
 /* Footer-subscribe */
 
-.subscribe-menu{
+/* .subscribe-menu{
     margin-left: 80px;
-}
+} */
 
 .subscribe-form{
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .title-subscribe{
@@ -515,6 +548,7 @@ font-size: 20px;
         line-height: 1.5;
         letter-spacing: 0.32px;
         margin-bottom: 16px;
+        text-align: center;
 }
 
 .subscribe-email{
@@ -524,7 +558,7 @@ font-size: 20px;
         line-height: 1.5;
         letter-spacing: 0.48px;
     padding-left: 16px;
-  width: 264px;  
+  width: 288px;  
   height: 40px;
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -532,6 +566,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
 outline: transparent;
 outline-offset: 4px;
+opacity: 0.3;
 }
 
 .subscribe-email::placeholder{
@@ -553,13 +588,14 @@ outline-offset: 4px;
         cursor: pointer;
         border: none;
         border-radius: 4px;
-        min-width: 165px;
+        width: 165px;
         height: 40px;
         padding: 8px 24px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0 auto 0 auto;
 }
 
 .telegram-icon{
