@@ -379,8 +379,8 @@
                   <img
                     src="./images/banking-app.jpg"
                     alt="banking-app"
-                    width="360"
-                    height="300"
+                    width="288"
+                    height="280"
                     loading="lazy"
                   />
                 </picture>
@@ -428,8 +428,8 @@
                   <img
                     src="./images/cashless-payment.jpg"
                     alt="cashless-payment"
-                    width="360"
-                    height="300"
+                    width="288"
+                    height="280"
                     loading="lazy"
                   />
                 </picture>
@@ -477,8 +477,8 @@
                   <img
                     src="./images/meditation-app.jpg"
                     alt="meditation-app"
-                    width="360"
-                    height="300"
+                    width="288"
+                    height="280"
                     loading="lazy"
                   />
                 </picture>
@@ -527,8 +527,8 @@
                   <img
                     src="./images/taxi-service.jpg"
                     alt="taxi-service"
-                    width="360"
-                    height="300"
+                    width="288"
+                    height="280"
                     loading="lazy"
                   />
                 </picture>
@@ -573,12 +573,11 @@
                     "
                     type="image/jpg"
                   />
-
                   <img
                     src="./images/screen-illustration.jpg"
                     alt="screen-illustration"
-                    width="360"
-                    height="300"
+                    width="288"
+                    height="280"
                     loading="lazy"
                   />
                 </picture>
@@ -595,12 +594,48 @@
             </li>
             <li class="product-list">
               <div class="product-image">
-                <img
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/online-courses.jpg    1x,
+                      ./images/online-courses@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/tablet-online-courses.jpg    1x,
+                      ./images/tablet/tablet-online-courses@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/mobile-online-courses.jpg    1x,
+                      ./images/mobile/mobile-online-courses@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/online-courses.jpg"
+                    alt="online-courses"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                  />
+                </picture>
+                <!-- <img
                   src="./images/online-courses.jpg"
                   alt="online-courses"
                   width="360"
                   height="300"
-                />
+                /> -->
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
