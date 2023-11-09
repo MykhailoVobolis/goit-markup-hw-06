@@ -69,8 +69,6 @@ input {
 /* Header */
 
 .page-header{
-    padding-top: 16px;
-    padding-bottom: 16px;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
@@ -79,6 +77,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 56px;
 }
 
 /* logo */
@@ -103,63 +102,10 @@ input {
     display: none;
 }
 
-.link-navigation{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.marker{
-    position: relative;
-    color: #404bbf;
-}
-
-.link-navigation.marker::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-}
-
-.link-navigation:hover, .link-navigation:focus {
-    color: #404bbf;
-}
-
 /* Contacts */
 
 .contacts{
-    font-style: normal;
     display: none;
-}
-
-.contact-list{
-    display: flex;
-        align-items: center;
-        gap: 40px;
-        margin-left: 332px;
-        padding-top: 24px;
-        padding-bottom: 24px;
-}
-
-.link-contacts{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-contacts:hover, .link-contacts:focus{
-    color: #404bbf;
 }
 
 /* Main-content */
@@ -930,11 +876,125 @@ flex-direction: column;
     .burger-menu-button{
         display: none;
     }
+
+    .main-header-container {
+        height: 72px;
+    }
+
+/* Navigation-menu-tablet */
+
+.navigation{
+    display: flex;
+    gap: 120px;
+}
+
+    .navigation-menu {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+ .link-navigation {
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.5;
+     letter-spacing: 0.32px;
+     padding-top: 24px;
+     padding-bottom: 24px;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .marker {
+     position: relative;
+     color: #404bbf;
+ }
+
+ .link-navigation.marker::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -1px;
+     width: 100%;
+     height: 4px;
+     background-color: #404bbf;
+     border-radius: 2px;
+ }
+
+ .link-navigation:hover,
+ .link-navigation:focus {
+     color: #404bbf;
+ }
+
+/* Contacts-tablet */
+
+    .contacts {
+        font-style: normal;
+        display: flex;
+    }
+
+ .contact-list {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 12px;
+ }
+
+ .link-contacts {
+     display: block;
+     font-size: 12px;
+     font-weight: 400;
+     line-height: 1.16;
+     letter-spacing: 0.48px;
+     color: #434455;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .link-contacts:hover,
+ .link-contacts:focus {
+     color: #404bbf;
+ }
+
+/* Main-content-table */
+
+/* Hero-section-tablet */
+
+.hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet/tablet-bg.jpg);
+    min-width: 768px;
+}
+
+/* Изображение 2х для Hero-section-tablet */
+
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-devide-pixel-ratio: 2) {
+    .hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet/tablet-bg@2x.jpg)
+    }
+
+.main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    margin: 0 auto 36px auto;
+}
+
+/* Our-competencies-tablet */
+
+
+
+
+
+
+
 }
 
 
 
-/* MOBILE STYLES */
+/* DESKTOP STYLES */
 
 @media screen and (min-width: 1158px) {
     .container {
