@@ -766,17 +766,17 @@ fill: #f4f4fd;
     z-index: 999999;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* приховування бекдропу */
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-/* показ бекдропу is-open-mobile додається в клас mobile-menu-container */
-.is-open-mobile{
+    /* приховування mobile-menu */
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+
+/* показ mobile-menu*/
+.is-open{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .mobile-menu{
