@@ -1009,6 +1009,11 @@ screen and (min-devide-pixel-ratio: 2) {
     justify-content: center;
 }
 
+.portfolio-image {
+    width: 356px;
+    height: 300px;
+}
+
 .product-list {
     max-width: calc((100% - 24px) / 2);
 }
@@ -1168,6 +1173,11 @@ screen and (min-devide-pixel-ratio: 2) {
 
 .portfolio-list {
     row-gap: 48px;
+}
+
+.portfolio-image{
+    width: 360px;
+    height: 300px;
 }
 
 .product-list {
